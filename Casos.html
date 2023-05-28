@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Seguridad de la Información</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .navbar-brand img {
+      width: 120px; 
+      height: auto; 
+      margin-right: 10px; 
+    }
+
+   
+    .timeline {
+      position: relative;
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline li {
+      position: relative;
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    
+    .timeline li::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+
+
+    .timeline li::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 2px;
+      height: calc(100% - 45px);
+      background-color: #ccc;
+      z-index: -1;
+    }
+
+    .timeline .timeline-content {
+      position: relative;
+      margin-right: 50px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+
+    .timeline .timeline-content h4 {
+      margin-top: 0;
+    }
+
+    .timeline .timeline-content p {
+      margin-bottom: 0;
+    }
+
+    .timeline-image {
+      position: absolute;
+      top: 30px;
+      right: -350px;
+      width: 300px;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="home.html">
+      <img src="logoFinal.png" alt="Logo UACJ">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Casos.html">Casos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consejos.html">Consejos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="amenazas.html">Amenazas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <section class="container">
+    <h1>Estadísticas y casos crímenes en México</h1>
+  
+    <br><br>
+  
+    <ul class="timeline">
+      <li>
+        <div class="timeline-content">
+          <h4>2017 | Robo masivo de datos personales de más de 93 millones de ciudadanos mexicanos.</h3>
+          <p>Se reportó uno de los mayores casos de robo de datos personales en México. Una base de datos con información de más de 93 millones de ciudadanos mexicanos, incluyendo nombres, direcciones, números de teléfono y números de identificación, fue expuesta en Internet. Este incidente puso en evidencia la vulnerabilidad de los datos personales y la importancia de protegerlos adecuadamente.</p>
+        </div>
+        <img src="imagen1.jpg" alt="Imagen 1" class="timeline-image">
+      </li>
+      <li>
+        <div class="timeline-content">
+          <h4>2019 | Reporte de más de 4 millones de ataques cibernéticos dirigidos a instituciones gubernamentales en México.</h3>
+          <p>El gobierno mexicano informó que había detectado y bloqueado más de 4 millones de ataques cibernéticos dirigidos a instituciones gubernamentales en el país. Esto resalta la necesidad de fortalecer las medidas de seguridad para proteger la información confidencial y los sistemas gubernamentales.</p>
+        </div>
+        <img src="imagen2.jfif" alt="Imagen 2" class="timeline-image">
+      </li>
+      <li>
+        <div class="timeline-content">
+          <h4>2020 | Estudio revela que el 61% de las empresas mexicanas encuestadas experimentaron incidentes de seguridad en los últimos 12 meses.</h3>
+          <p>Según el "Estudio sobre la Madurez de la Ciberseguridad en México" realizado en 2020, el 61% de las empresas mexicanas encuestadas experimentaron al menos un incidente de seguridad en los últimos 12 meses. Estos incidentes incluyen ataques de ransomware, filtraciones de datos y brechas de seguridad. Estas cifras reflejan la importancia de que las empresas fortalezcan sus defensas y adopten buenas prácticas de seguridad de la información.</p>
+        </div>
+        <img src="imagen3.png" alt="Imagen 3" class="timeline-image">
+      </li>
+      <li>
+        <div class="timeline-content">
+          <h4>2020 | Reporte de más de 45,000 delitos cibernéticos en México, incluyendo suplantación de identidad y fraude en línea.</h3>
+          <p>Los delitos cibernéticos, como la suplantación de identidad, el fraude en línea y el robo de información, han aumentado significativamente en México en los últimos años. Según datos de la Secretaría de Seguridad y Protección Ciudadana (SSPC), se reportaron más de 45,000 delitos cibernéticos en el país en 2020. Estas cifras resaltan la necesidad de una mayor conciencia y protección en línea.</p>
+        </div>
+        <img src="imagen4.jpg" alt="Imagen 4" class="timeline-image">
+      </li>
+    </ul>
+  </section>
+  
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>© 2023 Gerardo Andrés Félix Irigoyen | 201549</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>

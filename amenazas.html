@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Seguridad de la información</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar-brand img {
+      width: 120px; 
+      height: auto; 
+      margin-right: 10px; 
+    }
+
+    .jumbotron {
+      position: relative;
+      background-image: url('amenazas1.png');
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 170px;
+    }
+
+    .jumbotron:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.319); 
+    }
+
+    
+    .jumbotron h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: #fff; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    }
+
+
+    .threat-card {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .threat-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .threat-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="home.html">
+      <img src="logoFinal.png" alt="Logo UACJ">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Casos.html">Casos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consejos.html">Consejos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html">Amenazas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <div class="jumbotron">
+    <h1>Amenazas a la Ciberseguridad</h1>
+  </div>
+
+  <!-- Contenido -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="threat-card">
+          <h2>Malware</h2>
+          <p>El malware es un software malicioso diseñado para dañar o infiltrarse en sistemas informáticos sin el consentimiento del usuario. Puede incluir virus, troyanos, ransomware y spyware.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="threat-card">
+          <h2>Phishing</h2>
+          <p>El phishing es una técnica utilizada para engañar a las personas y obtener información confidencial, como contraseñas, números de tarjetas de crédito o datos personales, haciéndose pasar por una entidad confiable en un mensaje o sitio web falso.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="threat-card">
+          <h2>Ataques de fuerza bruta</h2>
+          <p>Los ataques de fuerza bruta consisten en intentar todas las combinaciones posibles de contraseñas hasta encontrar la correcta. Los atacantes utilizan software automatizado para probar miles o millones de contraseñas en poco tiempo.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="threat-card">
+          <h2>Secuestro de cuentas</h2>
+          <p>El secuestro de cuentas se produce cuando los ciberdelincuentes obtienen acceso no autorizado a una cuenta, ya sea a través de contraseñas débiles, técnicas de phishing u otras vulnerabilidades. Pueden robar información personal o utilizar la cuenta para llevar a cabo actividades ilegales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>© 2023 Gerardo Andrés Félix Irigoyen | 201549</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
